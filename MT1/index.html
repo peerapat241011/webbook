@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="top">
+            <div class="toptop">
+            <div class="logo">
+               <a href="index.html" class="Home">
+               <img src="photo/book.jpg">
+               </a>
+           
+           <ul class="topmenu">
+               <li><a href="index.html">BOOK</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+</div>
+</ul>
+<input type="search" class="search-field" placeholder="SEARCH" value="" name="s">    
+        <div class="shop">
+            <div class="cart">
+                <i class="fas fa-cart-shopping"></i>
+                <div class="count">
+                    5
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="head1">
+    <li><a href="trending.html">TRENDING</a></li>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">CATEGOLY
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Article.html">Artcle</a>
+                <a href="comiceassy.html">Comic Essay</a>
+                <a href="Experience.html">Experience</a>
+                <a href="IllustrationEssay.html">Illustration Essay</a>
+                <a href="Journey.html">Journey</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+            <div id="plist" class="product">
+                
+    </div>
+
+    <div id="modalDesc" class="modal" style="display: none;">
+        <div onclick="closeModal()" class="modal-bg"></div>
+        <div class="modal-page">
+            <h2 style="text-align: center;">BOOK</h2>
+            <div class="M-content">
+                <div class="detail">
+                    <p id="mdname" style= "font-size: 2vw;">Name</p>
+                    <p id="mdprice"style= "font-size: 1.5vw;">500B</p>
+                    <br>
+                
+                    <p id="mddesc"style= "font-size: 1vw;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quo molestias nulla obcaecati ipsum tenetur animi autem vitae aperiam quos?</p>
+                    <br>
+                    <div class="btn-con">
+                        <button onclick="closeModal()" class="btnc">
+                            Close
+                        </button>
+                        <button class="btna">
+                            ADD
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" style="display: none;">
+        <div class="modal-bg"></div>
+        <div class="modal-page">
+            <h2>My cart</h2>
+            <br>
+            <div class="list">
+                <div class="list-t">
+                    <div class="left">
+                    <p style= "font-size: 1.2vw;">Product Name</p>
+                    <p style= "font-size: 0.9vw;">500B</p>
+                    </div>
+                    <div class="right">
+                        <p class="bb">-</p>
+                        <p class="aa">1</p>
+                        <p class="bb">+</p>
+                    </div>
+                </div>
+                <div class="list-t">
+                    <div class="left">
+                    <p style= "font-size: 1.2vw;">Product Name</p>
+                    <p style= "font-size: 0.9vw;">500B</p>
+                    </div>
+                    <div class="right">
+                        <p class="bb">-</p>
+                        <p class="aa">1</p>
+                        <p class="bb">+</p>
+                    </div>
+                </div>
+                <div class="list-t">
+                    <div class="left">
+                    <p style= "font-size: 1.2vw;">Product Name</p>
+                    <br>
+                    <p style= "font-size: 0.9vw;">500B</p>
+                    </div>
+                    <div class="right">
+                        <p class="bb">-</p>
+                        <p class="aa">1</p>
+                        <p class="bb">+</p>
+                    </div>
+                </div>
+                <div class="btn-con">
+                    <button class="btnc">
+                        Close
+                    </button>
+                    <button class="btna">
+                        BUY
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
